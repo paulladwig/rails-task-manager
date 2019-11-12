@@ -1,0 +1,9 @@
+<h1><%=@task.title %></h1>
+<%completed = @task.completed == true ? "☑ This Task has been completed" : "☒ This Task has not been completed" %>
+<p class="single-details"><%=@task.details%></p>
+<p class="single-completed"><%=completed%></p>
+<div class="flex-btn">
+  <div class="back-btn"><%= link_to "edit task", task_edit_path(@task)%></div>
+  <div class="back-btn"><%= link_to "back to all tasks", tasks_path%></div>
+</div>
+

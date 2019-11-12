@@ -1,0 +1,12 @@
+<h1>Your Tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <%completed = task.completed == true ? "🔘" : "⚪️" %>
+    <div class="list-task"><li class="task_item"><%=completed%><span class="flex-grow"> <%=link_to "#{task.title}", task_path(task)%> </span><%= link_to "❌", task_path(task), method: :delete, data: { confirm: "Are you sure?" } %></li></div>
+
+  <% end %>
+</ul>
+
+<div class="new-btn"><%=link_to "Add a Task", task_new_path%></div>
+

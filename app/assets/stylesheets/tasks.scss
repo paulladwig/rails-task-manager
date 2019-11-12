@@ -1,0 +1,92 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: arial;
+}
+
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.task_item {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+.single-details {
+  padding: 30px 40px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 40px;
+  border: 2px solid rgb(218, 218, 218);
+}
+
+.single-completed {
+  margin-left: 40px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: rgb(255, 50, 108);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.new-btn a {
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: rgb(255, 50, 108);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+}
+
+.new-btn a:hover {
+  transform: scale(1.1)
+}
+
+.back-btn a:hover {
+  transform: scale(1.1)
+}
+
+.back-btn {
+  height: 37px;
+}
+
+.list-task a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.task_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-task {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rgb(246, 246, 246);
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.flex-btn {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  padding-left: 20px;
+}

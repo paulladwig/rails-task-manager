@@ -1,0 +1,12 @@
+<h1><%=@task.title%></h1>
+
+<%=form_for @task do |f|%>
+<%=f.text_field :title%>
+<%=f.text_field :details%>
+<%=f.check_box :completed%>
+<%=f.submit%>
+<%end%>
+
+<div class="back-btn"><%= link_to "back to task", task_path(@task)%></div>
+
+
